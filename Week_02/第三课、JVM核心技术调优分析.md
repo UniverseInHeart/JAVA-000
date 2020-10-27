@@ -14,12 +14,6 @@ java -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:PrintGCDateStamps GCLogAnalysis
 
 java -Xmn128m -Xmx128m -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
 
-java -Xmn256m -Xmx256m -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
-java -Xmn512m -Xmx512m -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
-java -Xmn1g -Xmx1g -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
-java -Xmn2g -Xmx2g -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
-java -Xmn4g -Xmx4g -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
-
 ```
 
 
@@ -60,7 +54,6 @@ CMS-concurrent-reset  //并发重置
 #### G1
 内存越大效率越高，大内存才能真正发挥G1的威力
 
+设置堆内存过小，GC次数上升，可能发生OOM
 
-
-** 设置堆内存过小，GC次数上升，可能发生OOM **
-** 如果不设置Xms,第一次youngGC时内存较小，GC发生时间会提前**
+如果不设置Xms,第一次youngGC时内存较小，GC发生时间会提前
