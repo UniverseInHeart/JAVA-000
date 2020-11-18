@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-3.2.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+    
+    <bean id="one"
+          class="com.java.week5.inject.xml.Student">
+        <property name="id" value="1" />
+        <property name="name" value="xjf" />
+    </bean>
+    <bean id="two"
+          class="com.java.week5.inject.xml.Student">
+        <property name="id" value="2" />
+        <property name="name" value="lj" />
+    </bean>
+
+
+    
+    <bean id="classOne" class="com.java.week5.inject.xml.Klass">
+        <property name="students">
+            <list>
+                <ref bean="one" />
+                <ref bean="two" />
+            </list>
+        </property>
+    </bean>
+    
+
+    <bean id="school" class="com.java.week5.inject.xml.School"></bean>
+    
+    
+</beans>
