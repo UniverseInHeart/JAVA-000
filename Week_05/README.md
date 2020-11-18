@@ -1,11 +1,11 @@
 作业  
 
 1. 使用Java里的动态代理，实现一个简单的AOP  
-    1.cglib    com.java.week5.aop.cglib  
+    1. cglib    com.java.week5.aop.cglib  
     2. jdk    com.java.week5.aop.jdk
    
 2. 实现SpringBean装配   
-    1.java bean  
+    1. java bean  
     2. xml  
     3. 注解扫描  
     
