@@ -9,4 +9,4 @@ homework3:练习示例代码里下列类中的作业题
 
 homework4:练习redission的各种功能
 
-[code](https://github.com/UniverseInHeart/homework/tree/main/homework/src/main/java/redis)
+[code](https://github.com/UniverseInHeart/homework/tree/main/homework/src/main/java/redis) <----
