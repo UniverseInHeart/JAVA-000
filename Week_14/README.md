@@ -13,7 +13,7 @@
   - [x] 2）使用指针记录当前消息写入位置。 
   - [x] 3）对于每个命名消费者，用指针记录消费位置
   
-  https://github.com/UniverseInHeart/JavaCourseCodes/tree/my/09mq/kmq-core
+ [自定义Queue](https://github.com/UniverseInHeart/JavaCourseCodes/tree/my/09mq/kmq-core)
 
 - [ ] 3、基于SpringMVC实现MQServer,拆分broker和client(包括producer和consumer) 
 
