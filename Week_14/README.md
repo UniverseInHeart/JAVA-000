@@ -1,19 +1,19 @@
 ## 作业
-
 ### 第一个版本-内存Queue
-
 - [x] 基于内存Queue实现生产和消费API
 
-  - [ ] 1）创建内存BlockingQueue，作为底层消息存储
-  - [ ] 2）定义Topic，支持多个Topic
-  - [ ] 3）定义Producer，支持Send消息
-  - [ ] 4）定义Consumer，支持Poll消息
+  - [x] 1）创建内存BlockingQueue，作为底层消息存储
+  - [x] 2）定义Topic，支持多个Topic
+  - [x] 3）定义Producer，支持Send消息
+  - [x] 4）定义Consumer，支持Poll消息
 
-- [ ] 2、去掉内存Queue，设计自定义Queue，实现消息确认和消费offset 
+- [x] 2、去掉内存Queue，设计自定义Queue，实现消息确认和消费offset 
 
-  - [ ] 1）自定义内存Message数组模拟Queue。 
-  - [ ] 2）使用指针记录当前消息写入位置。 
-  - [ ] 3）对于每个命名消费者，用指针记录消费位置
+  - [x] 1）自定义内存Message数组模拟Queue。 
+  - [x] 2）使用指针记录当前消息写入位置。 
+  - [x] 3）对于每个命名消费者，用指针记录消费位置
+  
+  https://github.com/UniverseInHeart/JavaCourseCodes/tree/my/09mq/kmq-core
 
 - [ ] 3、基于SpringMVC实现MQServer,拆分broker和client(包括producer和consumer) 
 
